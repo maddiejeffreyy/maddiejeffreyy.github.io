@@ -15,3 +15,9 @@ header, footer{
    box-shadow: 0 10px 10px 2px 1px black; 
 }
 
+li:nth-child(2n-1){
+   background-color: beige; 
+}
+
+
+
