@@ -15,36 +15,52 @@ header{
 .site-contain{
     background-color: #d8eae9;
     width:70vw;
-    height:350vh;
+    height:240%;
     position: absolute;
     top: 0%;
     left: 15%;
 }
+/* creating the light turquoise background that all the content will sit in */
 
 .content{
     margin-left: 1%;
     margin-right: 1%;
 }
+/* moving the left and right margins so the content doesn't run right to the 
+edge of the light turquoise box */
 
-.left, .centered, .right {
-    background-color: #d8eae9;
-    border: none;
-    color: white;
-    padding: 20px 34px;
-    position: relative;
-    left: 9%;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 20px;
-    cursor: pointer;
-}
 a:link{
     text-decoration: none;
     text-transform: uppercase;
     text-align: center;
 }
+/* taking underline off links, making link text all uppercase, and centering the link */
 
+.nav{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #d8eae9;
+    padding-top: 2%;
+    text-align: center;
+}
+
+.nav1, .nav2, .nav3 {
+    display: inline;
+    border-right: 1px solid black;
+    padding: 9%;
+}
+
+.nav3 {
+    border-right: none;
+}
+  
+li a {
+    display: inline;
+    padding: 1%;
+    float: center;
+}
 
 .photo{
     float:left;
@@ -52,50 +68,57 @@ a:link{
     margin-right: 15px;
     margin-bottom: 25px;
 }
+/* creating the margin (space) around the image so the text isn't right
+beside the image */
 
-.wrap{
+.wrap { 
     text-align:left;
 }
 
-.contact{
+.contact {
     border: black 1px solid;
-    width: 68vw;
-    height: 50vh;
+    width: 97.5%;
+    height: 22%;
     position: absolute;
     left: 1%;
-
 }
 
 
-.button{
+.button {
     text-transform: uppercase;
 }
 
-.name, .email{
+.name, .email {
     width: 97%;
     margin-inline-start: 1%;
 }
- textarea{
+ textarea {
      width: 94%;
      margin-inline-start: 2%;
  }
- label{
+ label {
      margin-inline-start: 1%;
  }
- .txtlabel{
+ .txtlabel {
      margin-inline-start: 2%;
  }
 
-span{
+span {
     margin-inline-start: 2%;
     font-size: 18px;
     margin-bottom: 2px;
 }
-.radio{
+.radio {
     margin-inline-start: 1%;
 }
-button{
+button { 
     background-color: #d8eae9;
     border: black 1px solid;
     margin-inline-start: 2%;
+}
+
+.br {
+    position:absolute;
+    bottom:0;
+    right:5px;
 }

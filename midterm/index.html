@@ -6,20 +6,19 @@
     <title>Document</title>
     <link href="css/main.css" rel="stylesheet">
   </head>
+  <!-- making a class for the body so i can style it in css -->
   <body class="site-contain">
       <header>
           <h1>Lone Starfish</h1>
       </header>
       <nav>
-        <div class="left">
-          <a href="index.html">Home</a>
-        </div>
-        <div class="centered">
-          <a href="#story">Story</a>
-        </div>
-        <div class="right">
-          <a href="#contact">Contact</a>
-        </div>
+        <!-- linking the navigation (home, story, contact) so when you
+        click on it, it will take you to the proper place on the page -->
+        <ul class="nav">
+          <li class="nav1"><a href="index.html">Home</a></li>
+          <li class="nav2"><a href="#story">Story</a></li>
+          <li class="nav3"><a href="#contact">Contact</a></li>
+        </ul>
       </nav>
       <div class="content"> 
         <div id="story">
@@ -52,6 +51,7 @@
             <li>Waryfish, "lionfish; longfin smelt; leopard danio dragonfish," Lost River sucker, mojarra.</li>
           </ul>
         </div>
+        <!-- adding id so i can target/link it to the nav bar -->
         <div id="contact">
           <h3>Contact to learn more</h3>
         </div>
@@ -87,7 +87,11 @@
           </p>
         </form>
       </div>
-
+      <div class="box">
+        <p class="br">
+          © Lone Starfish
+        </p>
+      </div>
   </body>
   
 </html>
