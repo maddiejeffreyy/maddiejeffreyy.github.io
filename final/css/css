@@ -1,0 +1,215 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/***********************************************************
+				        DEFAULTS
+***********************************************************/
+/* -- Font Import---------------------------------------------------------------------------------------------------------- --> */
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+
+/* --Font Styling ---------------------------------------------------------------------------------------------------------- --> */
+
+body{
+    font-size:16px;
+    font-family: 'Open Sans', sans-serif;
+    line-height: 1.5;
+}
+
+h1{
+    font-size:90px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+}
+
+h2{
+    font-size:50px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+}
+
+h3{
+    font-size:35px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+}
+
+h4{
+    font-size:16px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+}
+
+/* -- ---------------------------------------------------------------------------------------------------------- --> */
+
+
+html{
+    max-width: 1200px;
+
+site-container{
+    max-width:1200px;
+    margin:0 auto;
+}
+
+header{
+    background-color: #222;
+}
+
+nav ul li{
+   text-align: center;
+}
+
+nav div{
+    text-align: center;
+}
+
+nav{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+}
+nav li:nth-child(1){
+    grid-template-rows: 1200px 500px;
+}
+.orange img{
+    max-width:100%;
+    height: auto; 
+    position: relative;
+}
+
+.shadow-box{
+    position: absolute;
+    top: 370px;
+}
+
+margin-top: 2%;
+margin-bottom: 2%;
+
+/* -- About Us---------------------------------------------------------------------------------------------------------- --> */
+
+.pink{
+    background-color:#ffe6ac ;
+    width:100%;
+}
+.pink-contain{
+    margin-right: 2%;
+    margin-left: 2%;
+}
+
+.pink img{
+    margin-top: 2%;
+    width:100%;
+    height: auto;
+    object-fit: cover;
+}
+
+/* -- Our Services---------------------------------------------------------------------------------------------------------- --> */
+
+.green{
+    margin-left: 2%;
+    margin-right: 2%;
+    margin-top: 5%;
+}
+
+.green img{
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.green p, h3{
+    margin-left: 2%;
+    margin-right: 2%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+
+.dig-tran, .mark, .vid-pro, .web-dev, .print{
+    background-color: #ffe6ac;
+    margin-top: 2%;
+}
+
+/* -- Our Vision---------------------------------------------------------------------------------------------------------- --> */
+
+.blue img{
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    margin-top: 2%;
+}
+
+.blue{
+    position: relative;
+}
+
+.blue p, h3{
+    margin-left: 2%;
+    margin-right: 2%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+
+/* -- Our Team---------------------------------------------------------------------------------------------------------- --> */
+
+.red{
+    margin-left: 2%;
+    margin-right: 2%;
+    margin-top: 5%;
+}
+
+.red img{
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.red p, h3, h4{
+    margin-left: 2%;
+    margin-right: 2%;
+    margin-top: 2%;
+}
+
+.john, .bob{
+    background-color: #ffe6ac;
+    margin-top: 2%;
+}
