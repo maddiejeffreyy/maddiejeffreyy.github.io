@@ -13,38 +13,43 @@
             <img src="images/logo.png" alt="3 stars logo">
         </div>
         <nav> 
-            <ul>
+            <ul class="nav">
                 <li>
-                    <a href="#home">
-                        <span>Home</span>
+                    <a class="home-link" href="#home">
+                        <span class="lihome">Home</span>
                     </a>
                 </li>
                 <li>
-                    <a href="#about-us">
+                    <a class="link" href="#about-us">
                         <span>About Us</span>
                     </a>
                 </li>
                 <li>
-                    <a href="#services">
+                    <a class="link" href="#services">
                         <span>Services</span>
                     </a>
                 </li>
                 <li>
-                    <a href="#team">
+                    <a class="link" href="#team">
                         <span>Team</span>
                     </a>
                 </li>
                 <li>
-                    <a href="#contact">
+                    <a class="link" href="#contact">
                         <span>Contact</span>
                     </a>
                 </li>
             </ul>
             <div>
-                <input type="text" placeholder="Search">
-                <button type="submit">&#x1F50D;</button>
+                <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
             </div>
-            <!-- used &#x1F50D to add the search icon -->
+
+            <div>
+                <form class="search">
+                    <input type="text" placeholder="Search" name="search">
+                    <button type="submit"><i class="fa fa-search"></i></button>
+                  </form>
+            </div>
         </nav>
         <div class="orange" id="home">
             <img src="images/main-banner.jpg" alt="cool office environment">
@@ -55,10 +60,11 @@
                     tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
                     quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo 
                     consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse 
-                    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non 
-                    proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                    cillum dolore eu fugiat nulla pariatur. 
                 </p>
-                <a href="#contact" class="connect-button ">Connect with us &#9654;</a>
+                <div>
+                    <button class="connect-button" type="button" name="connect">Connect with us &#9654;</button>
+                </div>
             </div>
             <!-- used "#" in the a href attribute so it will take you to another pace on the page -->
         </div>
@@ -88,100 +94,85 @@
         <div class=dig-tran>
             <img src="images/digital.jpg" alt="multitasking between phone and laptop">
             <h3>Digital Transformation</h3>
-            <p>
+            <p class="a">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
                 incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis 
-                nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
-                Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu 
-                fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in 
-                culpa qui officia deserunt mollit anim id est laborum.
+                nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
             </p>
             <div>
-                <button type="button" name="digital-plans">Digital Plans &#9654;</button>
+                <button class="button" type="button" name="digital-plans">Digital Plans &#9654;</button>
             </div>
         </div>
 
         <div class="mark">
             <img src="images/marketing.jpg" alt="laptop with analytics">
             <h3>Marketing</h3>
-            <p>
+            <p class="b">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
                 incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis 
                 nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
-                Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu 
-                fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in 
-                culpa qui officia deserunt mollit anim id est laborum.
             </p>
             <div>
-                <button type="button" name="marketing">Marketing Plans &#9654;</button>
+                <button class="button" type="button" name="marketing">Marketing Plans &#9654;</button>
             </div>
         </div>
 
         <div class="vid-pro">
             <img src="images/video.jpg" alt="phone with youtube">
             <h3>Video Production</h3>
-            <p>
+            <p class="c">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
                 incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis 
-                nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
-                Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu 
-                fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in 
-                culpa qui officia deserunt mollit anim id est laborum.
+                nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
             </p>
             <div>
-                <button type="button" name="video-plans">Video Plans &#9654;</button>
+                <button class="button" type="button" name="video-plans">Video Plans &#9654;</button>
             </div>
         </div>
 
         <div class="web-dev">
             <img src="images/web.jpg" alt="phone and grid paper">
             <h3>Web Development</h3>
-            <p>
+            <p class="d">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
                 incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis 
-                nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
-                Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu 
-                fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in 
-                culpa qui officia deserunt mollit anim id est laborum.
+                nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
             </p>
             <div>
-                <button type="button" name="web-plans">Web Plans &#9654;</button>
+                <button class="button" type="button" name="web-plans">Web Plans &#9654;</button>
             </div>
         </div>
 
         <div class="print">
             <img src="images/print.jpg" alt="newspaper boxes">
             <h3>Print</h3>
-            <p>
+            <p class="e">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
                 incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis 
-                nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
-                Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu 
-                fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in 
-                culpa qui officia deserunt mollit anim id est laborum.
+                nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
             </p>
             <div>
-                <button type="button" name="print-plans">Print Plans &#9654;</button>
+                <button class="button" type="button" name="print-plans">Print Plans &#9654;</button>
             </div>
         </div>
     </section>
 <!-- -------------------------------------------------------------------------------------------------------------------------- -->
     <section class="blue">
         <div class="blue-contain">
-            <img src="images/vision.jpg" alt="paper boats">
-            <h3>Our Vision</h3>
-            <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
-                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis 
-                nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
-                Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu 
-                fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in 
-                culpa qui officia deserunt mollit anim id est laborum.
-            </p>
-            <div>
-                <button type="button" name="learn-more">Learn More &#9654;</button>
+                <img src="images/vision.jpg" alt="paper boats">   
+            <div class="overlay">
+                <h3>Our Vision</h3>
+                <p class="ov">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
+                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis 
+                    nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+                    Duis aute irure dolor in reprehenderit. 
+                </p>
+                <div>
+                    <button class="learn-more"type="button" name="learn-more">Learn More &#9654;</button>
+                </div>
+                <!-- used &#9654 to add the 'triangle/play' icon -->
             </div>
-            <!-- used &#9654 to add the 'triangle/play' icon -->
         </div>
     </section>
 <!-- -------------------------------------------------------------------------------------------------------------------------- -->
@@ -229,7 +220,7 @@
     <div class="purple-contain">
         <h2>Contact Us</h2>
         <div>
-            <h3>Send us a message</h3>
+            <h5>Send us a message</h5>
             <form action="index.html" method="get">
                 <p class="name">
                     <label for="name">Full Name </label>
@@ -241,16 +232,16 @@
                 </p>
                 <p class="message">
                     <label class="txtlabel" for="message">Message </label>
-                    <textarea id="message" name="message" rows="4" cols="50"> </textarea>
+                    <textarea class="message" id="message" name="message" rows="4" cols="50"> </textarea>
                 </p>
                 <p>
-                    <button class="button" type="submit" name="send">send</button>
+                    <button class="send" type="submit" name="send">Send</button>
                 </p>
             </form>
         </div>
 
         <div>
-            <h3>Hours of operation</h3>
+            <h5>Hours of operation</h5>
             <table>
                 <thead>
                     <tr>
@@ -272,7 +263,7 @@
         </div>
 
         <div class="map">
-            <h3>Location</h3>
+            <h5>Location</h5>
             <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d11216.227095672693!2d-75.757677!3d45.3476662!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cce04540b77e3bb%3A0x9e246d934b6c6ed!2sAlgonquin%20College%20of%20Applied%20Arts%20and%20Technology!5e0!3m2!1sen!2sca!4v1637855122896!5m2!1sen!2sca" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
         </div>
         <!-- Used iframe to embed responsive map -->
@@ -282,9 +273,8 @@
 <footer>
     <p>
         © Copyright Three Star Media, 2020
-    </p>
         <br>
-    <p>
+        <br>
         All images are taken from Unsplash
     </p>
 </footer>
