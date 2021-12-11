@@ -73,6 +73,7 @@ h3{
     font-size:35px;
     font-family: 'Open Sans', sans-serif;
     font-weight: 700;
+    margin-left: 2%;
 }
 
 h4{
@@ -86,6 +87,7 @@ h4{
 
 html{
     max-width: 1200px;
+}
 
 site-container{
     max-width:1200px;
@@ -121,9 +123,19 @@ nav li:nth-child(1){
     position: absolute;
     top: 370px;
 }
-
-margin-top: 2%;
-margin-bottom: 2%;
+.connect-button{
+    background-color: #c78c06;
+    width: 225px;
+    height: 66px;
+    border: none;
+    color: black;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    padding-top: 31px;
+    margin-left: 2%;
+}
 
 /* -- About Us---------------------------------------------------------------------------------------------------------- --> */
 
@@ -151,22 +163,45 @@ margin-bottom: 2%;
     margin-top: 5%;
 }
 
+.serv{
+    margin-left: 2%;
+}
+
 .green img{
     width: 100%;
     height: auto;
     object-fit: cover;
 }
 
-.green p, h3{
+p{
+    margin-top: 2%;
     margin-left: 2%;
     margin-right: 2%;
-    margin-top: 2%;
     margin-bottom: 2%;
 }
 
 .dig-tran, .mark, .vid-pro, .web-dev, .print{
     background-color: #ffe6ac;
     margin-top: 2%;
+    margin-left: 2%;
+    margin-right: 2%;
+    margin-bottom: 2%;
+}
+
+button{
+    background-color: #222;
+    width: 225px;
+    height: 66px;
+    border: none;
+    color:white;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    padding-top: 31px;
+    padding-bottom: 52px;
+    margin-left: 2%;
+    margin-bottom: 2%;
 }
 
 /* -- Our Vision---------------------------------------------------------------------------------------------------------- --> */
@@ -174,15 +209,13 @@ margin-bottom: 2%;
 .blue img{
     width: 100%;
     height: auto;
-    object-fit: cover;
+    overflow: hidden;
     margin-top: 2%;
+    object-fit: cover;
 }
 
-.blue{
+.blue-contain{
     position: relative;
-}
-
-.blue p, h3{
     margin-left: 2%;
     margin-right: 2%;
     margin-top: 2%;
@@ -192,8 +225,8 @@ margin-bottom: 2%;
 /* -- Our Team---------------------------------------------------------------------------------------------------------- --> */
 
 .red{
-    margin-left: 2%;
-    margin-right: 2%;
+    margin-left: 4%;
+    margin-right: 4%;
     margin-top: 5%;
 }
 
@@ -203,13 +236,31 @@ margin-bottom: 2%;
     object-fit: cover;
 }
 
-.red p, h3, h4{
+.red p{
     margin-left: 2%;
     margin-right: 2%;
     margin-top: 2%;
+    margin-bottom: 2%;
+}
+
+.red h4{
+    margin-left: 2%;
 }
 
 .john, .bob{
     background-color: #ffe6ac;
     margin-top: 2%;
+}
+
+hr{
+    border-top: 2px solid #c78c06;
+    width: 96%;
+}
+
+/* -- Contact Us---------------------------------------------------------------------------------------------------------- --> */
+
+.purple{
+    margin-left: 2%;
+    margin-right: 2%;
+    margin-top: 5%;
 }
