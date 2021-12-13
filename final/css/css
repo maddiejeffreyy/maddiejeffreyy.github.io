@@ -164,7 +164,7 @@ form.search input[type=text] {
 }
 
 form.search button {
-    float: left;
+    float:right;
     width: 5%;
     padding: 10px;
     background:#222;
@@ -183,7 +183,7 @@ form.search button {
 }
 
 .shadow-box{
-    width: 800px;
+    max-width: 100%;
     height: auto;
     position: absolute;
     top: 585px;
@@ -219,7 +219,7 @@ form.search button {
     }
     li{
         display: inline;
-        padding: 20px;
+        padding: 30px;
     }
     ul{
         margin-top: 40px;
@@ -237,11 +237,13 @@ form.search button {
         width: 20%;
         background: #f1f1f1;
         margin-top: -30px;
+        position:relative;
+        margin-right: 110px;
     }
     
     form.search button {
         float: right;
-        width: 5%;
+        width: 100%;
         padding: 10px;
         background:#222;
         color: #c78c06;
@@ -250,6 +252,10 @@ form.search button {
         border-left: none;
         cursor: pointer;
         margin-bottom: 2%;
+        position: absolute;
+        margin-right: 80px;
+        top: -9%;
+        left: 1890%;
     }
 
     .shadow-box{
@@ -396,7 +402,7 @@ p{
     }
 
     .button{
-        width: 100%;
+        width: 94%;
         margin-left: 3%;
         margin-bottom: 3%;
         margin-top: 3%;
@@ -521,7 +527,7 @@ hr{
 }
 
 
-/* -- Contact Us---------------------------------------------------------------------------------------------------------- --> */
+/* -- Contact Us Mobile---------------------------------------------------------------------------------------------------------- --> */
 
 .purple{
     margin-left: 2%;
@@ -558,17 +564,6 @@ iframe{
     height: 600px;
 }
 
-/* -- footer---------------------------------------------------------------------------------------------------------- --> */
-
-footer{
-    padding-top: 2%;
-    margin-top: 2%;
-    background-color: #222;
-    color: #c78c06;
-    padding-left: 2%;
-    padding-bottom: 1%;
-}
-
 .send{
     background-color: #222;
     width: 60px;
@@ -579,4 +574,59 @@ footer{
     text-decoration: none;
     display: inline-block;
     font-size: 20px;
+}
+
+/* -- Contact Us Desktop---------------------------------------------------------------------------------------------------------- --> */
+@media screen and (min-width: 760px){
+    .purple-contain{
+        margin-left: 5%;
+        margin-right: 5%;
+        display:flex;
+        flex-wrap: wrap;
+    }
+
+    .purple-contain .subtitle{
+        width: 100%;
+        order: -3;
+    }
+
+    .purple-contain .personal-info{
+        width: 48%;
+        order: -2;
+        margin-right: 2%;
+    }
+
+    .purple-contain .map{
+        width: 50%;
+        order: -1;
+
+    }
+
+    .purple-contain .hoo{
+        width: 100%;
+    }
+
+    iframe{
+        width: 100%;
+        height: 400px;
+    }
+}
+
+/* -- Footer Mobile---------------------------------------------------------------------------------------------------------- --> */
+
+footer{
+    padding-top: 2%;
+    margin-top: 2%;
+    background-color: #222;
+    color: #c78c06;
+    padding-left: 2%;
+    padding-bottom: 1%;
+}
+
+/* -- Footer Desktop---------------------------------------------------------------------------------------------------------- --> */
+
+footer{
+    padding-top: 1%;
+    padding-bottom: 2px;
+    padding-left: 6%;
 }
