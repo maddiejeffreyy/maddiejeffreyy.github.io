@@ -450,7 +450,7 @@ p{
     margin-bottom: 2%;
 }
 
-/* -- Our Team---------------------------------------------------------------------------------------------------------- --> */
+/* -- Our Team Mobile---------------------------------------------------------------------------------------------------------- --> */
 
 .red{
     margin-left: 2%;
@@ -480,10 +480,46 @@ p{
     margin-top: 2%;
 }
 
+.grid:nth-child(1){
+    object-fit: cover;
+}
+
+.grid:nth-child(2){
+    background-color: #ffe6ac;
+}
+
+.grid:nth-child(4){
+    background-color: #ffe6ac;
+}
+
 hr{
     border-top: 2px solid #c78c06;
     width: 96%;
 }
+
+/* -- Our Team Desktop---------------------------------------------------------------------------------------------------------- --> */
+@media screen and (min-width: 760px){
+
+    .grid-contain{
+        display:grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .grid:nth-child(1){
+        order: -2;
+    }
+    .grid:nth-child(2){
+        order: -1;
+    }
+
+    .grid:nth-child(3){
+        order: 2;
+    }
+    .grid:nth-child(4){
+        order: 1;
+    }
+}
+
 
 /* -- Contact Us---------------------------------------------------------------------------------------------------------- --> */
 
