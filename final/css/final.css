@@ -91,6 +91,7 @@ h5{
     font-weight: 700;
     margin-top: 2%; 
 }
+/* styled all my fonts here */
 
 /* -- header mobile ---------------------------------------------------------------------------------------------------------- --> */
 
@@ -125,6 +126,7 @@ a.link:link{
     text-decoration: none;
     color: #c78c06; 
 }
+/* used text decoration to take away the underline */
 
 a.link:visited{
     color: #c78c06;
@@ -179,13 +181,14 @@ form.search button {
 
 .orange{
     position: relative;
-    background-image: url(../images/main-banner.jpg);
+    background-image: url("../images/main-banner.jpg");
     background-position: center;
     background-size: cover;
+    padding-top: 10%;
+    padding-bottom: 10%;
 }
 
 .shadow-box{
-    position: absolute;
     width: 96%; 
     height: auto; 
     background-color: rgba(0,0,0,0.75);
@@ -209,11 +212,15 @@ form.search button {
 
 /* -- Header Desktop------------------------------------------------------------------------------------------------------------ --> */
 @media screen and (min-width: 760px){
-   
-   
+/* Used media queries to change stylke for desktop version */
+   nav{
+       display: flex;
+    }
+
     .logo{
         background-color: #222;
         margin-left: 5%;
+        margin-bottom: 2%;
     }
 
     li{
@@ -227,6 +234,7 @@ form.search button {
 
     .search{
         display: flex;
+        margin-top: 29px;
     }
 
     form.search input[type=text] {
@@ -242,12 +250,13 @@ form.search button {
         border: 1px solid #c78c06;
         border-left: none;
         cursor: pointer;
+        padding: 5%;
+        padding-right: 5%;
     }
 
     .shadow-box{
         width: 86%;
         height: auto;
-        position: absolute;
         top: 10%;
         height: auto; 
         background-color: rgba(0,0,0,0.75);
@@ -288,8 +297,6 @@ form.search button {
         margin-right: 5%;
         margin-left: 5%;
     }
-
-
 }
 
 /* -- Our Services Mobile---------------------------------------------------------------------------------------------------------- --> */
@@ -381,7 +388,7 @@ p{
     .green .vid-pro, .web-dev, .print{
         flex-basis: 31%;
     }
-
+/* used flex-basis to evenly divide the space among our services */
     .button{
         width: 94%;
         margin-left: 3%;
@@ -390,8 +397,6 @@ p{
         margin-right:6%; 
     }
 }
-
-
 
 /* -- Our Vision---------------------------------------------------------------------------------------------------------- --> */
 
@@ -486,7 +491,6 @@ hr{
 
 /* -- Our Team Desktop---------------------------------------------------------------------------------------------------------- --> */
 @media screen and (min-width: 760px){
-
     .grid-contain{
         display:grid;
         grid-template-columns: 1fr 1fr;
@@ -506,7 +510,8 @@ hr{
         order: 1;
     }
 }
-
+/* used grid and nth-child to put our team into the grid format.
+used order to assign when the pictures and words would appear */
 
 /* -- Contact Us Mobile---------------------------------------------------------------------------------------------------------- --> */
 
@@ -539,6 +544,7 @@ table{
     height: auto;
     border-collapse: collapse;
 }
+/* used table to create the grid for hours of operation */
 
 iframe{
     width: 100%;
@@ -592,7 +598,7 @@ iframe{
         height: 400px;
     }
 }
-
+/* used iframe to implement the interactive map into the website*/
 /* -- Footer Mobile---------------------------------------------------------------------------------------------------------- --> */
 
 footer{
