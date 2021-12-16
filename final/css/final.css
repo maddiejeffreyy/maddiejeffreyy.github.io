@@ -160,6 +160,9 @@ form.search input[type=text] {
     font-size: 17px;
     border: 1px solid #222;
     background: #f1f1f1;
+    margin-bottom: 2%;
+    margin-left: 2%;
+    flex-grow: 1;
 }
 
 form.search button {
@@ -168,8 +171,10 @@ form.search button {
     color: #c78c06;
     font-size: 17px;
     border: 1px solid #c78c06;
-    border-left: none;
     cursor: pointer;
+    padding: 1%;
+    margin-bottom: 2%;
+    margin-right: 2%;
 }
 
 .orange img{
@@ -184,8 +189,8 @@ form.search button {
 .shadow-box{
     height: auto;
     position: absolute;
-    top: 585px;
-    width: 86%; 
+    top: 5%;
+    width: 96%; 
     height: auto; 
     background-color: rgba(0,0,0,0.75);
     color: white;
@@ -208,7 +213,7 @@ form.search button {
 
 /* -- Header Desktop------------------------------------------------------------------------------------------------------------ --> */
 @media screen and (min-width: 760px){
-   nav{
+   .navflex{
        display: flex;
    }
    
@@ -252,10 +257,11 @@ form.search button {
         width: 86%;
         height: auto;
         position: absolute;
-        top: 300px;
+        top: 10%;
         height: auto; 
         background-color: rgba(0,0,0,0.75);
         color: white;
+        margin-left: 5%;
     }
 }
 
