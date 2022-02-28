@@ -1,0 +1,23 @@
+
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+header img{
+    width:90px;
+}
+a{
+    text-decoration: none;
+}
+#slogan{
+    margin-top: 15px;
+}
+#nav{
+    margin-top: 10px;
+}
+a:active{
+    background-color: aqua;
+}
+
