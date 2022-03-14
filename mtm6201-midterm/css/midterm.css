@@ -80,6 +80,8 @@ a{
 }
 .box5:nth-child(3):hover{
     background-color: #FF8585;
+    transform: scale(1.2);
+    transition: transform 1s;
 }
 .box5:nth-child(4){
     margin-top: 25px;
@@ -87,6 +89,8 @@ a{
 }
 .box5:nth-child(4):hover{
     background-color: #84CFE2;
+    transform: scale(1.2);
+    transition: transform 1s;
 }
 .box5:nth-child(5){
     margin-top: 25px;
@@ -94,6 +98,8 @@ a{
 }
 .box5:nth-child(5):hover{
     background-color: #FFC870;
+    transform: scale(1.2);
+    transition: transform 1s;
 }
 .box5:nth-child(6){
     margin-top: 25px;
@@ -102,6 +108,8 @@ a{
 }
 .box5:nth-child(6):hover{
     background-color: #8BE49D;
+    transform: scale(1.2);
+    transition: transform 1s;
 }
 body{
     max-width:85%;
@@ -155,6 +163,39 @@ body{
     border-radius: 25px;
     border: none;
 }
+
+@keyframes pulse{
+    0%{
+      background:  #ff8585;
+    }
+    100%{
+      background: #ff4545;
+    }
+}
+.visitustoday-button:hover{
+    background: #ff8585;
+    animation-name: pulse;
+    animation-duration: 0.6s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes greenpulse{
+    0%{
+      background:  #8BE49D;
+    }
+    100%{
+      background: #55d46e;
+    }
+}
+.menu-page .visitustoday-button:hover{
+    background: #8BE49D;
+    animation-name: greenpulse;
+    animation-duration: 0.6s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
 .flex{
     display:flex;
     flex-direction: column;
