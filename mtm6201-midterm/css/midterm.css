@@ -235,6 +235,12 @@ body{
 .thecatroom .grid:nth-child(3){
     grid-area: 1 / 4 / 2 / 6;
 }
+a{
+    color: #404040;
+}
+a:visited{
+    color: #404040;
+}
 
 /* ----------------------------TABLET HOME PAGE----------------------------- */
 @media screen and (max-width: 760px){
